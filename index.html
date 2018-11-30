@@ -1,0 +1,102 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<style type="text/css">
+
+		/***************************Navigation Bar***************************/
+			#nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				position: -webkit-sticky; /*For Safari*/
+				position: sticky;
+				top: 0;
+				width: 100%;
+			}
+
+			#nav li {
+				float: left;
+				background-color: #333;
+			}
+
+			#nav li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			#nav li a:hover {
+				background-color: #111;
+			}
+
+			.active {
+				background-color: #4CAF50;
+			}
+
+			.content {
+				height: 1000px;
+			}
+			
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+		<script>
+		$('.smooth').on('click', function() {
+		    $.smoothScroll({
+		        scrollElement: $('body'),
+		        scrollTarget: '#' + this.id
+		    });
+		    
+		    return false;
+		});
+		</script>
+
+	</head>
+	<body>
+		<div id="nav">
+			<ul id="nav.items">
+				<li><a href="#thesis">Thesis</a></li>
+				<li><a href="#background">Background</a></li>
+				<li><a href="#build-up">Build-Up</a></li>
+				<li><a href="#heart-of-story">Heart Of Story</a></li>
+				<li><a href="#short-term">Short-Term Consequences</a></li>
+				<li><a href="#long-term">Long-Term Consequences</a></li>
+				<li><a href="#conclusion">Conclusion</a></li>
+				<li><a href="#resources">Resources</a></li>
+				<li><a href="#oral-histories">Oral Histories</a></li>
+			</ul>
+		</div>
+		<div class="content" class="smooth">
+			<div id="thesis">
+				<p>The Special Olympics, which began when Eunice Kennedy Shriver established Camp Shriver in 1962 as a summer camp for children with special needs, have developed into a celebration of the abilities of people with intellectual disabilities through sports competitions and into an advocacy group for the rights and recognition of these athletes that haven't been recognized for so long. From the tragedy of being sequestered and kept away from the rest of society in mental institutions and having their cognitive abilities severely reduced by invasive brain surgery, to the triumph of being recognized as full, contributing members of society through both legislation and advocacy, people with intellectual disabilities fighting this fight reveal that our society can only thrive when no one is kept in the shadows. </p>
+			</div>
+			<div id="background">
+				<p>Discrimination against those with intellectual disabilities has always been a significant issue around the world, especially during the early 1900s. </p>
+			</div>
+			<div id="build-up">
+				<p>To address these issues, there was a push to develop new treatments for people with mental health problems and intellectual disabilities. Thus, research began on these new medical treatments and strategies attempting to overcome these disabilities.</p>
+			</div>
+			<div id="heart-of-story">
+				<p>One particular tragedy that came from the medical discovery of lobotomy was the supposed treatment of Rosemary Kennedy's intellectual disability. In turn, Eunice Kennedy created the Special Olympics in an attempt to improve the lives of those with these disabilities. </p>
+			</div>
+			<div id="short-term">
+				<p>Shortly after Eunice Kennedy Shriver founded the early beginnings of the Special Olympics, there were clear effects on the lives of those with intellectual disabilities and their families. </p>
+			</div>
+			<div id="long-term">
+				<p>Now, this organization continues to grow and expand and its impact extends over not only individuals with intellectual disabilities and their families, but also over new policy regarding those with these disabilities and it continually influences peoples' opinions. </p>
+			</div>
+			<div id="conclusion">
+				<p>The current Special Olympics, a worldwide advocacy force for people with intellectual disabilities, have a history rooted deeply in tragedy. People with intellectual disabilities were kept away from the rest of society in mental institutions and were left with limited capabilities after being lobotomized. Through Eunice Kennedy Shriver establishing Camp Shriver, the forerunner to the modern Special Olympics, in 1962, this story continues triumphantly, demonstrating how our entire society can only thrive when no one inhibited from participating. </p>
+			</div>
+			<div id="resources">
+				<p>These are our resources!</p>
+			</div>
+			<div id="oral-histories">
+				<p>Read some of the oral histories that we conducted! </p>
+			</div>
+		</div>
+	</body>
+	</html>
